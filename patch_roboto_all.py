@@ -67,7 +67,6 @@ for ufo_folder in os.listdir(sources_dir):
     if "space" in font:
         glyph = font["space"]
         glyph.width = space_width
-        glyph.changed()
         font.save()
         print("  - Updated space.glif")
 
