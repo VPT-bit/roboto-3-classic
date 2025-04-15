@@ -20,6 +20,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install .
+          pip install defcon
+
+      - name: Patch
+        run: python patch_roboto_all.py
 
       - name: Build fonts
         run: sh sources/build.sh
